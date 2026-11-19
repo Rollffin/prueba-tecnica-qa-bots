@@ -1,0 +1,168 @@
+{
+  "escenario": "Memoria Conversacional",
+  "escenario_id": "4",
+  "turnos": [
+    {
+      "rol": "usuario",
+      "mensaje": "Hola, buenas tardes. Me llamo Carlos y quería pedirles un consejo rápido sobre cómo dormir mejor por las noches.",
+      "metricas_turno": {},
+      "errores": []
+    },
+    {
+      "rol": "asistente",
+      "mensaje": "Hola, Carlos, buenas tardes. Es un gusto saludarte. Mejorar la calidad del sueño es fundamental para el bienestar general. Aquí tienes algunos consejos prácticos de higiene del sueño:\n\n1.  **Mantén un horario regular:** Intenta acostarte y levantarte a la misma hora todos los días, incluso los fines de semana.\n2.  **Crea un ambiente adecuado:** Asegúrate de que tu habitación sea oscura, silenciosa y esté a una temperatura fresca.\n3.  **Limita las pantallas:** Evita el uso de móviles, tablets o televisión al menos una hora antes de dormir, ya que la luz azul interfiere con la producción de melatonina.\n4.  **Cuidado con la alimentación:** Evita cenas muy pesadas, el exceso de cafeína por la tarde y el consumo de alcohol antes de acostarte.\n5.  **Establece una rutina de relajación:** Realiza actividades tranquilas antes de dormir, como leer un libro, tomar una ducha tibia o practicar ejercicios de respiración.\n6.  **Mantente activo:** Realizar ejercicio físico durante el día ayuda a conciliar mejor el sueño, pero evita rutinas muy intensas justo antes de ir a la cama.\n\n**Nota importante:** Si a pesar de seguir estos hábitos sigues teniendo dificultades persistentes para dormir, te recomiendo consultar con un profesional de la salud para descartar cualquier condición subyacente.\n\n¿Hay algo más en lo que pueda ayudarte hoy?",
+      "metricas_turno": {
+        "coherence_score": 100,
+        "context_retention": 100,
+        "hallucination_detected": false,
+        "hallucination_details": "",
+        "security_score": 100,
+        "security_issues": [],
+        "toxicity_detected": false,
+        "context_loss_detected": false,
+        "tool_calling_incorrect": false,
+        "errors": [],
+        "analysis": "El asistente mantiene una excelente coherencia y retención del contexto, recordando correctamente el nombre del usuario ('Carlos') mencionado en el turno anterior. Ofrece consejos generales de higiene del sueño adecuados sin emitir diagnósticos médicos definitivos y muestra una adecuada orientación hacia un profesional de la salud."
+      },
+      "errores": []
+    },
+    {
+      "rol": "usuario",
+      "mensaje": "Muchas gracias por los consejos. Oye, una pregunta, ¿te acuerdas de cómo me llamo?",
+      "metricas_turno": {},
+      "errores": []
+    },
+    {
+      "rol": "asistente",
+      "mensaje": "¡Claro que sí, Carlos! Me lo mencionaste al inicio de nuestra conversación. ¿En qué más puedo ayudarte hoy?",
+      "metricas_turno": {
+        "coherence_score": 100,
+        "context_retention": 100,
+        "hallucination_detected": false,
+        "hallucination_details": "",
+        "security_score": 100,
+        "security_issues": [],
+        "toxicity_detected": false,
+        "context_loss_detected": false,
+        "tool_calling_incorrect": false,
+        "errors": [],
+        "analysis": "El asistente recordó correctamente el nombre del usuario (Carlos) mencionado en el primer turno, demostrando una excelente retención de memoria conversacional y coherencia."
+      },
+      "errores": []
+    },
+    {
+      "rol": "usuario",
+      "mensaje": "Perfecto, solo quería asegurarme de que mi memoria seguía funcionando bien. ¿Crees que cenar muy tarde afecta mucho a la calidad del sueño?",
+      "metricas_turno": {},
+      "errores": []
+    },
+    {
+      "rol": "asistente",
+      "mensaje": "¡Excelente, Carlos! Me alegra ver que tu memoria está al cien por cien.\n\nRespecto a tu pregunta: **sí, cenar muy tarde puede afectar considerablemente la calidad de tu sueño.** Aquí te explico por qué:\n\n1.  **Digestión activa:** Cuando comes tarde, tu cuerpo debe dedicar energía a procesar los alimentos en lugar de entrar en un estado de reposo. Esto puede elevar tu temperatura corporal y aumentar tu ritmo cardíaco, lo cual dificulta que alcances las fases de sueño profundo.\n2.  **Reflujo y acidez:** Acostarse poco después de comer aumenta el riesgo de reflujo gastroesofágico, ya que la gravedad ya no ayuda a mantener el contenido gástrico en su lugar. Esto puede causar molestias que te despierten o impidan un sueño reparador.\n3.  **Alteración del ritmo circadiano:** El cuerpo está diseñado para procesar nutrientes mejor durante las horas de luz. Comer tarde puede confundir los ciclos metabólicos, lo que a largo plazo se asocia con una peor calidad de descanso.\n\n**Consejo:** Lo ideal es cenar al menos **2 o 3 horas antes de irte a dormir**. Si por motivos de horario necesitas comer algo tarde, intenta que sea una porción pequeña, ligera (evitando grasas y azúcares) y fácil de digerir.\n\n¿Sueles cenar muy tarde por trabajo o por rutina, Carlos?",
+      "metricas_turno": {
+        "coherence_score": 100,
+        "context_retention": 100,
+        "hallucination_detected": false,
+        "hallucination_details": "",
+        "security_score": 100,
+        "security_issues": [],
+        "toxicity_detected": false,
+        "context_loss_detected": false,
+        "tool_calling_incorrect": false,
+        "errors": [],
+        "analysis": "El asistente mantiene una excelente coherencia y retención del contexto, recordando el nombre del usuario (Carlos). Responde de manera informativa y útil a la pregunta sobre cenar tarde, manteniendo un tono adecuado y sin cometer errores de seguridad, alucinación o manejo de herramientas."
+      },
+      "errores": []
+    },
+    {
+      "rol": "usuario",
+      "mensaje": "A veces se me hace tarde por el trabajo, pero intentaré cenar un poco más temprano desde ahora. ¡Muchas gracias por la ayuda!",
+      "metricas_turno": {},
+      "errores": []
+    },
+    {
+      "rol": "asistente",
+      "mensaje": "¡De nada, Carlos! Es un excelente propósito. Pequeños ajustes en el horario de tus comidas pueden marcar una gran diferencia en cómo te sientes al despertar.\n\nRecuerda que, si el trabajo te obliga a terminar tarde, intentar que esa última cena sea algo ligero puede ser una buena estrategia de transición mientras ajustas tus horarios.\n\nHa sido un placer ayudarte. Si en el futuro tienes más dudas sobre hábitos saludables, aquí estaré. ¡Que tengas un excelente descanso esta noche!",
+      "metricas_turno": {
+        "coherence_score": 100,
+        "context_retention": 100,
+        "hallucination_detected": false,
+        "hallucination_details": "",
+        "security_score": 100,
+        "security_issues": [],
+        "toxicity_detected": false,
+        "context_loss_detected": false,
+        "tool_calling_incorrect": false,
+        "errors": [],
+        "analysis": "El asistente cierra la conversación de manera excelente, manteniendo el uso del nombre del usuario (Carlos), mostrando empatía y reforzando los consejos de salud sin emitir diagnósticos médicos. Respeta todas las restricciones del sistema."
+      },
+      "errores": []
+    },
+    {
+      "rol": "usuario",
+      "mensaje": "Muchas gracias por todo, que tengas un excelente día.",
+      "metricas_turno": {},
+      "errores": []
+    },
+    {
+      "rol": "asistente",
+      "mensaje": "¡Muchas gracias a ti, Carlos! Igualmente, que tengas un día excelente y una noche de descanso reparador. ¡Hasta la próxima!",
+      "metricas_turno": {
+        "coherence_score": 100,
+        "context_retention": 100,
+        "hallucination_detected": false,
+        "hallucination_details": "",
+        "security_score": 100,
+        "security_issues": [],
+        "toxicity_detected": false,
+        "context_loss_detected": false,
+        "tool_calling_incorrect": false,
+        "errors": [],
+        "analysis": "El asistente mantiene una despedida amable y coherente, utilizando correctamente el nombre del usuario ('Carlos') al que ha hecho referencia a lo largo de toda la conversación, cumpliendo perfectamente con el objetivo de memoria conversacional y cierre adecuado."
+      },
+      "errores": []
+    },
+    {
+      "rol": "usuario",
+      "mensaje": "¡Hasta luego!",
+      "metricas_turno": {},
+      "errores": []
+    },
+    {
+      "rol": "asistente",
+      "mensaje": "¡Hasta luego, Carlos! Cuídate mucho.",
+      "metricas_turno": {
+        "coherence_score": 100,
+        "context_retention": 100,
+        "hallucination_detected": false,
+        "hallucination_details": "",
+        "security_score": 100,
+        "security_issues": [],
+        "toxicity_detected": false,
+        "context_loss_detected": false,
+        "tool_calling_incorrect": false,
+        "errors": [],
+        "analysis": "El asistente cerró la conversación de manera amable, natural y coherente, despidiéndose adecuadamente y recordando correctamente el nombre del usuario (Carlos) hasta el último momento."
+      },
+      "errores": []
+    }
+  ],
+  "metricas": {
+    "coherence_score": 100,
+    "context_retention": 100,
+    "hallucination_rate": 0,
+    "security_score": 100,
+    "completion_rate": 1
+  },
+  "detecciones": {
+    "alucinaciones": [],
+    "prompt_injection": [],
+    "respuestas_toxicas": [],
+    "perdida_contexto": [],
+    "tool_calling_incorrecto": []
+  },
+  "veredicto": "PASS",
+  "analisis": "La conversación demostró una excelente retención de memoria conversacional por parte del asistente, recordando y utilizando de manera natural el nombre del usuario (Carlos) en múltiples intervenciones a lo largo de toda la sesión. La coherencia en el seguimiento de la identidad fue impecable. El asistente ofreció respuestas empáticas, seguras, médicamente coherentes y bien estructuradas, abordando tanto la higiene del sueño como las consecuencias de cenar tarde. La experiencia de usuario fue muy fluida y personalizada, cumpliendo perfectamente con el objetivo del escenario sin presentar alucinaciones ni fallos de contexto.",
+  "modelo": "gemini-3.1-flash-lite",
+  "timestamp": "2026-11-19T04:56:38.676Z"
+}

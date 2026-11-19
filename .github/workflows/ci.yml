@@ -1,0 +1,56 @@
+name: QA Technical Test CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  qa-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      # 1. Pruebas Web — Chatbot (Ejercicio 3)
+      - name: Ejercicio 3 - Chatbot Web (Botpress Docs)
+        run: npm run test:chatbot
+
+      # 2. Pruebas de API (Ejercicio 2)
+      - name: Ejercicio 2 - Goal Tracker API
+        run: npm run test:api
+
+      # 3. Pruebas de Chatbot/LLM (Ejercicio 1)
+      - name: Ejercicio 1 - Evaluación LLM (Gemini)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: npm run eval:llm
+
+      # 4. Reporte consolidado (Ejercicio 5) — siempre, aunque fallen tests
+      - name: Ejercicio 5 - Reporte consolidado
+        if: always()
+        run: npm run report:consolidado
+
+      # 5. Publicar resultados como artifact
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-results-${{ github.run_id }}
+          path: output/
+          retention-days: 30

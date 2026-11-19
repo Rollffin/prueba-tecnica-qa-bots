@@ -1,0 +1,25 @@
+{
+  "name": "prueba-tecnica-qa-llm",
+  "version": "1.0.0",
+  "description": "Prueba técnica para QA Engineer: AI Agents, LLMs",
+  "main": "index.js",
+  "scripts": {
+    "test:api": "PW_OUTPUT_DIR=output/ejercicio-2 playwright test ejercicio-2-api",
+    "test:chatbot": "PW_OUTPUT_DIR=output/ejercicio-3 playwright test ejercicio-3-chatbot",
+    "eval:llm": "npx ts-node ejercicio-1-llm-eval/src/runner.ts",
+    "report:consolidado": "npx ts-node ejercicio-5-consolidado/src/aggregator.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.12.2",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  }
+}

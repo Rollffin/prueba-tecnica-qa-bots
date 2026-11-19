@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+
+# Playwright artifacts temporales (los reportes finales SÍ van en output/)
+test-results/
+playwright-report/
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log

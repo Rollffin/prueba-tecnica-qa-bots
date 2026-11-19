@@ -1,0 +1,407 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/26.0.0/bin/node",
+      "/Users/rollffin/Desktop/Prueba Técnica Nerds/node_modules/.bin/playwright",
+      "test",
+      "ejercicio-3-chatbot"
+    ],
+    "configFile": "/Users/rollffin/Desktop/Prueba Técnica Nerds/playwright.config.ts",
+    "rootDir": "/Users/rollffin/Desktop/Prueba Técnica Nerds",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/global-setup.ts",
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/rollffin/Desktop/Prueba Técnica Nerds/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/rollffin/Desktop/Prueba Técnica Nerds",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/Users/rollffin/Desktop/Prueba Técnica Nerds/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "chromium",
+        "testDir": "/Users/rollffin/Desktop/Prueba Técnica Nerds",
+        "snapshotDir": "/Users/rollffin/Desktop/Prueba Técnica Nerds",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000,
+        "use": {
+          "trace": "on-first-retry",
+          "screenshot": "only-on-failure",
+          "video": "retain-on-failure",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/159.0.8154.6 Safari/537.36",
+          "viewport": {
+            "width": 1280,
+            "height": 720
+          },
+          "screen": {
+            "width": 1920,
+            "height": 1080
+          },
+          "deviceScaleFactor": 1,
+          "isMobile": false,
+          "hasTouch": false,
+          "defaultBrowserType": "chromium"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "chromium"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "output/ejercicio-3/html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/ejercicio-3/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.65.1",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+      "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Chatbot Web — Botpress Docs",
+          "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+          "line": 72,
+          "column": 6,
+          "specs": [
+            {
+              "title": "El sitio carga correctamente (status 200 y contenido clave visible)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1104,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:47:27.781Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bedd6b3d3be3bc396c08-8a2a5b3fbc8dde313fbe",
+              "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+              "line": 84,
+              "column": 3
+            },
+            {
+              "title": "El chat widget está presente en la página",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1059,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:47:28.965Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bedd6b3d3be3bc396c08-bf3ef1748898fc78def5",
+              "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+              "line": 97,
+              "column": 3
+            },
+            {
+              "title": "Se puede leer el nombre del bot en el widget",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1778,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:47:30.028Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bedd6b3d3be3bc396c08-bfc64db30dd8ddd4f168",
+              "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+              "line": 105,
+              "column": 3
+            },
+            {
+              "title": "El panel se puede cerrar y volver a abrir",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1834,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:47:31.809Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bedd6b3d3be3bc396c08-3ac4d30f86af5ec4c676",
+              "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+              "line": 117,
+              "column": 3
+            },
+            {
+              "title": "Conversación: enviar \"Hola\", validar mensaje y respuesta con tiempo",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4067,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[chatbot] Respuesta del bot en ~2022ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-18T02:47:33.647Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bedd6b3d3be3bc396c08-74dc5d7ff19ccf016593",
+              "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+              "line": 142,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-18T02:47:27.015Z",
+    "duration": 10724.492,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
