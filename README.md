@@ -42,8 +42,7 @@ prueba-tecnica-qa-llm/
 │
 ├── ejercicio-5-consolidado/
 │   ├── src/
-│   │   ├── aggregator.ts
-│   │   └── report-template.ts
+│   │   └── aggregator.ts
 │   └── output/
 │
 └── output/
@@ -55,10 +54,12 @@ prueba-tecnica-qa-llm/
 
 ## Configuración Inicial
 
+**Requisitos**: Node.js 20+ y npm.
+
 1.  **Clonar el repositorio**:
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
-    cd prueba-tecnica-qa-llm
+    git clone https://github.com/Rollffin/prueba-tecnica-qa-bots.git
+    cd prueba-tecnica-qa-bots
     ```
 
 2.  **Instalar dependencias**:
@@ -66,7 +67,12 @@ prueba-tecnica-qa-llm/
     npm install
     ```
 
-3.  **Configurar variables de entorno**: Copiar `.env.example` a `.env` y rellenar las variables necesarias.
+3.  **Instalar el navegador de Playwright** (necesario para el Ejercicio 3; en Linux añade `--with-deps`):
+    ```bash
+    npx playwright install chromium
+    ```
+
+4.  **Configurar variables de entorno**: Copiar `.env.example` a `.env` y rellenar las variables necesarias.
 
     ```bash
     cp .env.example .env
@@ -77,6 +83,8 @@ prueba-tecnica-qa-llm/
     GEMINI_API_KEY="TU_API_KEY_DE_GEMINI"
     BASE_URL_API="https://goal-tracker-api.onrender.com"
     ```
+
+    > `GEMINI_API_KEY` es obligatoria solo para el Ejercicio 1. Los Ejercicios 2 y 3 no la necesitan. `BASE_URL_API` ya tiene un valor por defecto en el código, pero puedes sobreescribirlo.
 
 ## Ejecución de Ejercicios
 
