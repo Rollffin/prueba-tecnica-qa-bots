@@ -1,8 +1,8 @@
 {
-  "generado": "2026-11-19T05:08:46.114Z",
+  "generado": "2026-11-19T06:08:00.836Z",
   "global": {
-    "total": 20,
-    "passed": 20,
+    "total": 31,
+    "passed": 31,
     "failed": 0,
     "passRate": 1
   },
@@ -88,116 +88,182 @@
     },
     "2-api": {
       "summary": {
-        "total": 10,
-        "passed": 10,
+        "total": 19,
+        "passed": 19,
         "failed": 0,
         "passRate": 1,
-        "avgDurationMs": 393
+        "avgDurationMs": 332
       },
       "tests": [
         {
           "title": "POST /auth/register crea usuario y devuelve 201 con nombre y email",
           "file": "ejercicio-2-api/tests/auth.spec.ts",
           "status": "passed",
-          "durationMs": 589
+          "durationMs": 493
         },
         {
           "title": "POST /auth/login con credenciales válidas devuelve token",
           "file": "ejercicio-2-api/tests/auth.spec.ts",
           "status": "passed",
-          "durationMs": 336
+          "durationMs": 362
         },
         {
           "title": "POST /auth/login con credenciales inválidas devuelve 401",
           "file": "ejercicio-2-api/tests/auth.spec.ts",
           "status": "passed",
-          "durationMs": 338
+          "durationMs": 526
+        },
+        {
+          "title": "register con email duplicado devuelve 400",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 968
+        },
+        {
+          "title": "login con email inexistente devuelve 401",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 213
+        },
+        {
+          "title": "login sin campo password devuelve 400",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 424
+        },
+        {
+          "title": "GET /goals sin token devuelve 401",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 184
+        },
+        {
+          "title": "GET /goals con token inválido devuelve 401",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 187
+        },
+        {
+          "title": "POST /goals sin token devuelve 401",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 187
+        },
+        {
+          "title": "POST /goals sin title devuelve 400",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 180
+        },
+        {
+          "title": "GET /goals/:id inexistente devuelve 404",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 207
+        },
+        {
+          "title": "DELETE /goals/:id inexistente devuelve 404",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "status": "passed",
+          "durationMs": 208
         },
         {
           "title": "Crear goal 1 devuelve 201 con campos obligatorios",
           "file": "ejercicio-2-api/tests/goals.spec.ts",
           "status": "passed",
-          "durationMs": 244
+          "durationMs": 298
         },
         {
           "title": "Crear goal 2 devuelve 201",
           "file": "ejercicio-2-api/tests/goals.spec.ts",
           "status": "passed",
-          "durationMs": 295
+          "durationMs": 221
         },
         {
           "title": "GET /goals/:id devuelve la información íntegra del goal",
           "file": "ejercicio-2-api/tests/goals.spec.ts",
           "status": "passed",
-          "durationMs": 271
+          "durationMs": 212
         },
         {
           "title": "GET /goals lista los goals creados",
           "file": "ejercicio-2-api/tests/goals.spec.ts",
           "status": "passed",
-          "durationMs": 264
+          "durationMs": 447
         },
         {
           "title": "DELETE /goals/:id elimina el goal y luego devuelve 404",
           "file": "ejercicio-2-api/tests/goals.spec.ts",
           "status": "passed",
-          "durationMs": 673
+          "durationMs": 448
         },
         {
           "title": "GET /goals ya no incluye el goal eliminado",
           "file": "ejercicio-2-api/tests/goals.spec.ts",
           "status": "passed",
-          "durationMs": 314
+          "durationMs": 205
         },
         {
           "title": "GET /api/v1/status responde 200 y status OPERATIONAL",
           "file": "ejercicio-2-api/tests/health.spec.ts",
           "status": "passed",
-          "durationMs": 603
+          "durationMs": 341
         }
       ]
     },
     "3-chatbot": {
       "summary": {
-        "total": 5,
-        "passed": 5,
+        "total": 7,
+        "passed": 7,
         "failed": 0,
         "passRate": 1,
-        "avgDurationMs": 1968
+        "avgDurationMs": 2093
       },
       "tests": [
         {
           "title": "El sitio carga correctamente (status 200 y contenido clave visible)",
           "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
           "status": "passed",
-          "durationMs": 1104
+          "durationMs": 886
         },
         {
           "title": "El chat widget está presente en la página",
           "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
           "status": "passed",
-          "durationMs": 1059
+          "durationMs": 1505
         },
         {
           "title": "Se puede leer el nombre del bot en el widget",
           "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
           "status": "passed",
-          "durationMs": 1778
+          "durationMs": 1435
         },
         {
           "title": "El panel se puede cerrar y volver a abrir",
           "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
           "status": "passed",
-          "durationMs": 1834
+          "durationMs": 1527
         },
         {
           "title": "Conversación: enviar \"Hola\", validar mensaje y respuesta con tiempo",
           "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
           "status": "passed",
-          "durationMs": 4067
+          "durationMs": 4049
+        },
+        {
+          "title": "Edge: el botón Send está deshabilitado con el input vacío",
+          "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+          "status": "passed",
+          "durationMs": 879
+        },
+        {
+          "title": "Edge: conversación multi-turno mantiene contexto",
+          "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+          "status": "passed",
+          "durationMs": 4367
         }
       ],
-      "botResponseTimeMs": 2022
+      "botResponseTimeMs": 2020
     }
   }
 }

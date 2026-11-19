@@ -47,6 +47,11 @@ export class ApiClient {
     await this.ctx.dispose();
   }
 
+  /** Acceso al contexto crudo para requests personalizados (edge cases). */
+  get requestContext(): APIRequestContext {
+    return this.ctx;
+  }
+
   // ---------- Health ----------
   async getStatus() {
     return this.ctx.get('/api/v1/status');

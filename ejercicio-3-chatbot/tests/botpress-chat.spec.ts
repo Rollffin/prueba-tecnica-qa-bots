@@ -177,4 +177,40 @@ test.describe('Chatbot Web — Botpress Docs', () => {
     expect(afterHola.trim().length).toBeGreaterThan(20);
     console.log(`[chatbot] Respuesta del bot en ~${elapsedMs}ms`);
   });
+
+  test('Edge: el botón Send está deshabilitado con el input vacío', async ({
+    page,
+  }) => {
+    await page.goto(SITE_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+    await expect(chatInput(page)).toBeVisible({ timeout: 20_000 });
+    const sendBtn = page.getByRole('button', { name: 'Send' });
+    // Con el textarea vacío, Send debe estar deshabilitado
+    await expect(sendBtn).toBeDisabled();
+  });
+
+  test('Edge: conversación multi-turno mantiene contexto', async ({ page }) => {
+    test.setTimeout(120_000);
+    await page.goto(SITE_URL, { waitUntil: 'domcontentloaded', timeout: 60_000 });
+    const panel = chatPanel(page);
+    await expect(panel).toBeVisible({ timeout: 20_000 });
+
+    // Turno 1
+    let textBefore = await panel.innerText();
+    await chatInput(page).fill('Hola');
+    await page.getByRole('button', { name: 'Send' }).click();
+    await waitForBotResponse(page, textBefore);
+
+    // Turno 2: pregunta de seguimiento que depende del contexto
+    textBefore = await panel.innerText();
+    await chatInput(page).fill('¿Qué es la hidratación?');
+    await page.getByRole('button', { name: 'Send' }).click();
+    const { panelText } = await waitForBotResponse(page, textBefore);
+
+    // La respuesta debe existir y el historial debe contener ambos mensajes del usuario
+    await expect(panel.getByText('Hola', { exact: true })).toBeVisible();
+    await expect(
+      panel.getByText('¿Qué es la hidratación?', { exact: true })
+    ).toBeVisible();
+    expect(panelText.length).toBeGreaterThan(textBefore.length + 20);
+  });
 });

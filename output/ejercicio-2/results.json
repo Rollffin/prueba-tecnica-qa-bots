@@ -18,7 +18,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 3
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "projects": [
@@ -27,7 +27,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
         "id": "chromium",
         "name": "chromium",
@@ -47,7 +47,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 3
+          "actualWorkers": 4
         },
         "name": "chromium",
         "testDir": "/Users/rollffin/Desktop/Prueba Técnica Nerds",
@@ -151,12 +151,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 589,
+                      "duration": 493,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:00.858Z",
+                      "startTime": "2026-11-19T06:07:28.449Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -203,12 +203,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 336,
+                      "duration": 362,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:01.471Z",
+                      "startTime": "2026-11-19T06:07:28.971Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -255,12 +255,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 338,
+                      "duration": 526,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:01.812Z",
+                      "startTime": "2026-11-19T06:07:29.337Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -280,6 +280,499 @@
               "id": "20770a8a54ab2eb49c51-fc8bd00d2463146fdd3c",
               "file": "ejercicio-2-api/tests/auth.spec.ts",
               "line": 37,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ejercicio-2-api/tests/edge-cases.spec.ts",
+      "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Edge cases — Auth",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "register con email duplicado devuelve 400",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 968,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:28.463Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-6ab81179bd6c17236ae3",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 24,
+              "column": 3
+            },
+            {
+              "title": "login con email inexistente devuelve 401",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 213,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:29.461Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-64ac5292589be4261e8e",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 34,
+              "column": 3
+            },
+            {
+              "title": "login sin campo password devuelve 400",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 424,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:29.678Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-1b4fe8f4e8839d9a7b85",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 41,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "Edge cases — Goals",
+          "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+          "line": 51,
+          "column": 6,
+          "specs": [
+            {
+              "title": "GET /goals sin token devuelve 401",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 184,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:30.120Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-ffc86ad02dfb82f663e1",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 70,
+              "column": 3
+            },
+            {
+              "title": "GET /goals con token inválido devuelve 401",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 187,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:31.152Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-84a5b0506dc5797c53ef",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 77,
+              "column": 3
+            },
+            {
+              "title": "POST /goals sin token devuelve 401",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 187,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:31.344Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-4e1bdd66eee50dae943e",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 86,
+              "column": 3
+            },
+            {
+              "title": "POST /goals sin title devuelve 400",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 180,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:31.537Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-4ad7a25ec1abcea2b8ee",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 95,
+              "column": 3
+            },
+            {
+              "title": "GET /goals/:id inexistente devuelve 404",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 207,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:31.724Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-b61363d6bfc53d6e3699",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 105,
+              "column": 3
+            },
+            {
+              "title": "DELETE /goals/:id inexistente devuelve 404",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 208,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:31.939Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-2-api/tests/edge-cases.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0e19d920f9447363c2b0-1d5890eaee8ab2a2ed5a",
+              "file": "ejercicio-2-api/tests/edge-cases.spec.ts",
+              "line": 112,
               "column": 3
             }
           ]
@@ -321,15 +814,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 244,
+                      "duration": 298,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:00.858Z",
+                      "startTime": "2026-11-19T06:07:28.450Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -373,15 +866,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 295,
+                      "duration": 221,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:02.251Z",
+                      "startTime": "2026-11-19T06:07:29.876Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -425,15 +918,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 271,
+                      "duration": 212,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:02.550Z",
+                      "startTime": "2026-11-19T06:07:30.103Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -477,15 +970,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 264,
+                      "duration": 447,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:02.827Z",
+                      "startTime": "2026-11-19T06:07:30.322Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -529,15 +1022,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 673,
+                      "duration": 448,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:03.097Z",
+                      "startTime": "2026-11-19T06:07:30.776Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -581,15 +1074,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 314,
+                      "duration": 205,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:03.780Z",
+                      "startTime": "2026-11-19T06:07:31.233Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -650,15 +1143,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 603,
+                      "duration": 341,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:33:00.857Z",
+                      "startTime": "2026-11-19T06:07:28.452Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -687,9 +1180,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-18T02:33:00.169Z",
-    "duration": 3960.402,
-    "expected": 10,
+    "startTime": "2026-11-19T06:07:27.817Z",
+    "duration": 4352.414000000001,
+    "expected": 19,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

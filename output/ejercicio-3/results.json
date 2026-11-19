@@ -151,12 +151,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1104,
+                      "duration": 886,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:47:27.781Z",
+                      "startTime": "2026-11-19T06:07:36.951Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -203,12 +203,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1059,
+                      "duration": 1505,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:47:28.965Z",
+                      "startTime": "2026-11-19T06:07:38.011Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -255,12 +255,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1778,
+                      "duration": 1435,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:47:30.028Z",
+                      "startTime": "2026-11-19T06:07:39.520Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -307,12 +307,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1834,
+                      "duration": 1527,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:47:31.809Z",
+                      "startTime": "2026-11-19T06:07:40.958Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -359,16 +359,16 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4067,
+                      "duration": 4049,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "[chatbot] Respuesta del bot en ~2022ms\n"
+                          "text": "[chatbot] Respuesta del bot en ~2020ms\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-11-18T02:47:33.647Z",
+                      "startTime": "2026-11-19T06:07:42.489Z",
                       "annotations": [
                         {
                           "type": "serial",
@@ -389,6 +389,110 @@
               "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
               "line": 142,
               "column": 3
+            },
+            {
+              "title": "Edge: el botón Send está deshabilitado con el input vacío",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 879,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:46.541Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bedd6b3d3be3bc396c08-b821b0a3070151b7c70c",
+              "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+              "line": 181,
+              "column": 3
+            },
+            {
+              "title": "Edge: conversación multi-turno mantiene contexto",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [
+                    {
+                      "type": "serial",
+                      "location": {
+                        "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                        "line": 0,
+                        "column": 0
+                      }
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4367,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-11-19T06:07:47.424Z",
+                      "annotations": [
+                        {
+                          "type": "serial",
+                          "location": {
+                            "file": "/Users/rollffin/Desktop/Prueba Técnica Nerds/ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+                            "line": 0,
+                            "column": 0
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bedd6b3d3be3bc396c08-63809d1864c273c58b80",
+              "file": "ejercicio-3-chatbot/tests/botpress-chat.spec.ts",
+              "line": 191,
+              "column": 3
             }
           ]
         }
@@ -397,9 +501,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-11-18T02:47:27.015Z",
-    "duration": 10724.492,
-    "expected": 5,
+    "startTime": "2026-11-19T06:07:36.363Z",
+    "duration": 15461.435,
+    "expected": 7,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
