@@ -12,3 +12,6 @@ playwright-report/
 
 # Logs
 *.log
+
+# Documento personal de defensa (no subir)
+DEFENSA.md
